@@ -1,0 +1,11 @@
+.row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.flex__end {
+    display: flex;
+    justify-content: flex-end;
+}

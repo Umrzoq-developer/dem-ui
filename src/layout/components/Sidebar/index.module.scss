@@ -1,0 +1,120 @@
+.drawer {
+    ::-webkit-scrollbar {
+        background-color: transparent;
+        width: 2px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        width: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+        width: 2px;
+    }
+
+    box-shadow: 5px 0px 20px rgb(0 0 0 / 6%);
+    border-right-color: transparent;
+
+    .MuiPaper-root {
+        box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.06) !important;
+        border-right-color: transparent !important;
+    }
+}
+
+.list {
+    ::-webkit-scrollbar {
+        background-color: transparent;
+        width: 2px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        width: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+        width: 2px;
+    }
+    scrollbar-width: 1px;
+    // overflow-y: unset;
+}
+
+.drawerHeader {
+    display: grid !important;
+    grid-template-columns: 3fr 1fr;
+    align-items: center !important;
+
+    .wrapLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.activeIcon {
+    fill: #606eea !important;
+
+    svg {
+        fill: #606eea !important;
+    }
+}
+
+.active {
+    background-color: rgba(96, 110, 234, 0.1) !important;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 8px;
+        height: 100%;
+        background: #606eea;
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    .MuiListItemIcon-root {
+        fill: red;
+    }
+
+    .MuiTypography-root {
+        color: red;
+    }
+}
+
+.listItem {
+    display: grid !important;
+    grid-template-columns: 3fr 1fr;
+    padding-left: 24px !important;
+
+    .leftSide {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+
+        .listIcon {
+            min-width: 20px !important;
+        }
+
+        .listText {
+            span {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                /* identical to box height, or 114% */
+
+                letter-spacing: 0.2px;
+
+                color: #273854;
+            }
+        }
+    }
+
+    .rightSide {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

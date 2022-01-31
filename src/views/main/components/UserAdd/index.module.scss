@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #606eea;
+        border-radius: 14px 0px 0px 14px;
+    }
+
+    .switchTitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 145% */
+
+        letter-spacing: 0.3px;
+
+        color: #393b4a;
+
+        opacity: 0.6;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        .title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            /* identical to box height, or 133% */
+
+            color: #273854;
+        }
+    }
+}

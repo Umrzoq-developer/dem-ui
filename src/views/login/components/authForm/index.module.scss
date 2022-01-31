@@ -1,0 +1,24 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .formContainer {
+        height: 40%;
+        width: 35%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .salom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

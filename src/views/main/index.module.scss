@@ -1,0 +1,92 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
+
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+
+        .headerText {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+
+            color: #273854;
+        }
+    }
+
+    .headerSecond {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .searchStyle {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .rightSide {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .select {
+                height: 30px;
+                width: 140px;
+
+                .MuiInputBase-input {
+                    font-size: 14px;
+                }
+            }
+
+            .rightText {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 24px;
+                /* identical to box height, or 200% */
+
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+
+                color: #969da8;
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 12px;
+            }
+        }
+    }
+
+    .file {
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+
+        .pageWrapper {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin: 30px 0;
+        }
+    }
+}
+
+.textField {
+    min-width: 440px !important;
+}
